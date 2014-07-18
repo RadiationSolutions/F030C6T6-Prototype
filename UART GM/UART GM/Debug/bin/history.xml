@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=UART GM.map -O0 --gc-sections -LD:\CooCox\CoIDE\configuration\ProgramData\UART GM -TD:\CooCox\CoIDE\configuration\ProgramData\UART GM/arm-gcc-link.ld -g">
+      <target file="UART GM.elf" lastModified="14749c6458d">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="147498ff7fa"/>
+         <source file="..\obj\main.o" lastModified="14749c6439f"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="147498ff84c"/>
+         <source file="..\obj\stm32f0xx_spi.o" lastModified="14749bbada4"/>
+         <source file="..\obj\system_stm32f0xx_temp.o" lastModified="147498ff8a4"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="147498ff913"/>
+         <source file="..\obj\syscalls.o" lastModified="1474995c005"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="147498ffa22"/>
+      </target>
+   </processor>
+</history>
