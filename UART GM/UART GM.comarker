@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<breakpoints>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="68" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: startup_stm32f4xx.s [line: 68]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="E:\Programy_inz\CooCox\workspace\hFramework\cmsis_boot\startup\startup_stm32f4xx.s"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="106" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: startup_stm32f4xx.s [line: 106]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="E:\Programy_inz\CooCox\workspace\hFramework\cmsis_boot\startup\startup_stm32f4xx.s"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker type="org.eclipse.cdt.debug.core.cWatchpointMarker">
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.read" value="false"/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.expression" value="usarts"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cWatchpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.write" value="true"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Write watchpoint:  [expression: &apos;usarts&apos;]"/>
+<attrib name="org.eclipse.cdt.debug.core.range" value="0"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker type="org.eclipse.cdt.debug.core.cWatchpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="org.eclipse.cdt.debug.core.read" value="false"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="org.eclipse.cdt.debug.core.expression" value="usarts"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cWatchpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.write" value="true"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Write watchpoint:  [expression: &apos;usarts&apos;]"/>
+<attrib name="org.eclipse.cdt.debug.core.range" value="0"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="108" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: startup_stm32f4xx.s [line: 108]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="E:\Programy_inz\CooCox\workspace\hFramework\cmsis_boot\startup\startup_stm32f4xx.s"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="41" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: hSerial.cpp [line: 41]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="D:\Program_tech\husarion_soft\workspace_main\hFramework\Libraries\hSerial\hSerial.cpp"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="61" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: myDMA.c [line: 61]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="D:\Program_tech\husarion_soft\workspace_main\hFramework\Libraries\hPeriph\myDMA.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="58" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: myDMA.c [line: 58]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="D:\Program_tech\husarion_soft\workspace_main\hFramework\Libraries\hPeriph\myDMA.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="64" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: myDMA.c [line: 61]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="D:\Program_tech\husarion_soft\workspace_main\hFramework\Libraries\hPeriph\myDMA.c"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="55" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: myDMA.c [line: 55]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="D:\Program_tech\husarion_soft\workspace_main\hFramework\Libraries\hPeriph\myDMA.c"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="110" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: startup_stm32f4xx.s [line: 110]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="E:\Programy_inz\CooCox\workspace\hFramework\cmsis_boot\startup\startup_stm32f4xx.s"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker lineNumber="43" type="org.eclipse.cdt.debug.core.cLineBreakpointMarker">
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cLineBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Line breakpoint: runTimeStatsInit.c [line: 43]"/>
+<attrib name="registered" value="true"/>
+<attrib name="path" value="/"/>
+<attrib name="org.eclipse.cdt.debug.core.sourceHandle" value="E:\Programy_inz\CooCox\workspace\hFramework\runTimeStatsInit.c"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+</marker>
+</breakpoint>
+<breakpoint enabled="true" persistant="true" registered="true">
+<resource path="/" type="8"/>
+<marker charStart="-1" lineNumber="-1" type="org.eclipse.cdt.debug.core.cAddressBreakpointMarker">
+<attrib name="org.eclipse.cdt.debug.core.condition" value=""/>
+<attrib name="enabled" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.address" value="0x0000000008020ddc"/>
+<attrib name="org.eclipse.debug.core.id" value="org.eclipse.cdt.debug.core"/>
+<attrib name="workingset_name" value=""/>
+<attrib name="org.eclipse.cdt.debug.core.installCount" value="0"/>
+<attrib name="type" value="org.eclipse.cdt.debug.core.cAddressBreakpointMarker"/>
+<attrib name="persistant" value="true"/>
+<attrib name="org.eclipse.cdt.debug.core.breakpointType" value="0"/>
+<attrib name="workingset_id" value="org.eclipse.debug.ui.breakpointWorkingSet"/>
+<attrib name="message" value="Address breakpoint:  [address: 0x0000000008020ddc]"/>
+<attrib name="registered" value="true"/>
+<attrib name="charStart" value="-1"/>
+<attrib name="path" value="/"/>
+<attrib name="charEnd" value="-1"/>
+<attrib name="org.eclipse.cdt.debug.core.ignoreCount" value="0"/>
+<attrib name="org.eclipse.debug.core.enabled" value="true"/>
+</marker>
+</breakpoint>
+</breakpoints>

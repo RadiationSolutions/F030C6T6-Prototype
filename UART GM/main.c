@@ -42,81 +42,43 @@
 #include "stm32f0xx_usart.h"
 #include <stdio.h>
 
-/** @addtogroup STM32F0xx_StdPeriph_Examples
-  * @{
-  */
-
-/** @addtogroup USART_Printf
-  * @{
-  */
-
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-
-
-/* Private functions ---------------------------------------------------------*/
 void USARTInit(void);
-
-/**
-  * @brief  Main program
-  * @param  None
-  * @retval None
-  */
 
 int usartPuts(char * ch)
 {
-  /* Place your implementation of fputc here */
-  /* e.g. write a character to the USART */
-	while(ch)
+	while(*ch)
 	{
 		USART_SendData(USART1, (uint8_t) (*ch));
-
-
-		while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET)
-		  {}
+		while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET) {}
+		ch++;
 	}
-
-  /* Loop until transmit data register is empty */
-
 }
 
 
 void main(void)
 {
-  /*!< At this stage the microcontroller clock setting is already configured,
-       this is done through SystemInit() function which is called from startup
-       file (startup_stm32f0xx.s) before to branch to application main.
-       To reconfigure the default setting of SystemInit() function, refer to
-       system_stm32f0xx.c file
-     */
-
   USARTInit();
 
   /* Output a message on Hyperterminal using printf function */
 
+  usartPuts("hello!\n\r");
+  uint8_t i = 0;
   while (1)
   {
-	  USART_SendData(USART1, 'a');
-
-
-	  		while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET)
-	  		  {}
+	  printf("works! %d\n\r",i++);
   }
 }
 
-/**
-  * @brief  Configures COM port.
-  * @retval None
-  */
+
+
+
 void USARTInit(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
     USART_InitTypeDef USART_InitStructure;
 
     /* USARTx configured as follow:
-    - BaudRate = 115200 baud
+    - BaudRate = 9600 baud
     - Word Length = 8 Bits
     - One Stop Bit
     - No parity
@@ -127,7 +89,7 @@ void USARTInit(void)
     USART_InitStructure.USART_WordLength = USART_WordLength_8b;
     USART_InitStructure.USART_StopBits = USART_StopBits_2;
     USART_InitStructure.USART_Parity = USART_Parity_No;
-    USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_RTS_CTS;
+    USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
     USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
 
     /* Enable GPIO clock */
@@ -157,23 +119,3 @@ void USARTInit(void)
     USART_Cmd(USART1, ENABLE);
 
 }
-
-/**
-  * @brief  Retargets the C library printf function to the USART.
-  * @param  None
-  * @retval None
-  */
-
-
-
-
-
-/**
-  * @}
-  */
-
-/**
-  * @}
-  */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
