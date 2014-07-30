@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.7.4 -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=UART GM.map -O0 --gc-sections -LC:\MyFiles\Science\Electronics\MicroControllers\CooCox\CoIDE\configuration\ProgramData\UART GM -TC:\MyFiles\Science\Electronics\MicroControllers\CooCox\CoIDE\configuration\ProgramData\UART GM/arm-gcc-link.ld -g">
-      <target file="UART GM.elf" lastModified="1478449dd0e">
+      <target file="UART GM.elf" lastModified="147849b3cdc">
          <source file="..\obj\stm32f0xx_rcc.o" lastModified="14784413b49"/>
-         <source file="..\obj\main.o" lastModified="1478449dac4"/>
+         <source file="..\obj\main.o" lastModified="147849b3a8d"/>
          <source file="..\obj\startup_stm32f0xx.o" lastModified="14784413be6"/>
          <source file="..\obj\printf.o" lastModified="14784418972"/>
          <source file="..\obj\stm32f0xx_spi.o" lastModified="14784413cbe"/>

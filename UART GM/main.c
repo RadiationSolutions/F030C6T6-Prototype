@@ -40,52 +40,43 @@
 #include "stm32f0xx_rcc.h"
 #include "stm32f0xx_gpio.h"
 #include "stm32f0xx_usart.h"
+#include "stm32f0xx_spi.h"
 #include <stdio.h>
 
-void USARTInit(void);
-
-int usartPuts(char * ch)
+void LED_Init()
 {
-	while(*ch)
-	{
-		USART_SendData(USART1, (uint8_t) (*ch));
-		while (USART_GetFlagStatus(USART1, USART_FLAG_TXE) == RESET) {}
-		ch++;
-	}
+	GPIO_InitTypeDef GPIO_InitStructure;
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_3;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
 }
-
-
-void main(void)
+void LED_On()
 {
-  USARTInit();
-
-  /* Output a message on Hyperterminal using printf function */
-
-  usartPuts("hello!\n\r");
-  uint8_t i = 0;
-  while (1)
-  {
-	  printf("works! %d\n\r",i++);
-  }
+	GPIO_SetBits(GPIOA, GPIO_Pin_3);
 }
-
-
-
-
+void LED_Off()
+{
+	GPIO_ResetBits(GPIOA, GPIO_Pin_3);
+}
 void USARTInit(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
     USART_InitTypeDef USART_InitStructure;
 
     /* USARTx configured as follow:
-    - BaudRate = 9600 baud
+    - BaudRate = 921600 baud
     - Word Length = 8 Bits
     - One Stop Bit
     - No parity
     - Hardware flow control disabled (RTS and CTS signals)
     - Receive and transmit enabled
     */
-    USART_InitStructure.USART_BaudRate = 9600;
+    USART_InitStructure.USART_BaudRate = 921600;
     USART_InitStructure.USART_WordLength = USART_WordLength_8b;
     USART_InitStructure.USART_StopBits = USART_StopBits_2;
     USART_InitStructure.USART_Parity = USART_Parity_No;
@@ -117,5 +108,81 @@ void USARTInit(void)
 
     /* Enable USART */
     USART_Cmd(USART1, ENABLE);
-
 }
+
+
+void SPI_LCD_Init()
+{
+	//SPI2 - SPI1 taken by SD card
+	SPI_InitTypeDef SPI_InitStructure;
+	GPIO_InitTypeDef GPIO_InitStructure;
+	/* Enable GPIO clocks */
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SPI1, ENABLE);
+
+	/* SPI GPIO Configuration --------------------------------------------------*/
+
+	/* Configure I/O for Flash Chip select */
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_Level_3;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+	/* SPI SCK,MISO,MOSI pin configuration */
+	GPIO_InitStructure.GPIO_Pin = (GPIO_Pin_5 | GPIO_Pin_6 | GPIO_Pin_7);
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;
+	GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
+	GPIO_Init(GPIOA, &GPIO_InitStructure);
+
+	/* Connect SPI pins to AF0 */
+	GPIO_PinAFConfig(GPIOA, GPIO_Pin_5, GPIO_AF_0);
+	GPIO_PinAFConfig(GPIOA, GPIO_Pin_6, GPIO_AF_0);
+	GPIO_PinAFConfig(GPIOA, GPIO_Pin_7,	GPIO_AF_0);
+
+	/* SPI configuration */
+	SPI_InitStructure.SPI_Direction = SPI_Direction_2Lines_FullDuplex;
+	SPI_InitStructure.SPI_Mode = SPI_Mode_Master;
+	SPI_InitStructure.SPI_DataSize = SPI_DataSize_8b;
+	SPI_InitStructure.SPI_CPOL = SPI_CPOL_Low;
+	SPI_InitStructure.SPI_CPHA = SPI_CPHA_1Edge;
+	SPI_InitStructure.SPI_NSS = SPI_NSS_Soft;
+	SPI_InitStructure.SPI_BaudRatePrescaler = SPI_BaudRatePrescaler_256; // 42000kHz/128=328kHz < 400kHz
+	SPI_InitStructure.SPI_FirstBit = SPI_FirstBit_MSB;
+	SPI_InitStructure.SPI_CRCPolynomial = 7;
+
+	SPI_Init(SPI1, &SPI_InitStructure);
+	SPI_RxFIFOThresholdConfig(SPI1, SPI_RxFIFOThreshold_QF);
+
+	SPI_CalculateCRC(SPI1, DISABLE);
+	SPI_Cmd(SPI1, ENABLE);
+
+	/* drain SPI TX buffer,just in case*/
+	while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_TXE) == RESET) {}
+	//SPI_ReceiveData8(SPIx_SD);
+}
+
+void main(void)
+{
+  USARTInit();
+  SPI_LCD_Init();
+  LED_Init();
+  LED_On();
+  while(1){
+	  //GPIO_ResetBits(GPIOA, GPIO_Pin_4);
+	  GPIOA->BRR = GPIO_Pin_3 | GPIO_Pin_2;
+	  SPI_SendData8(SPI1, 0b10101010);
+	  while (SPI_I2S_GetFlagStatus(SPI1, SPI_I2S_FLAG_RXNE) == RESET) {}
+	  SPI_ReceiveData8(SPI1);
+	  //GPIO_SetBits(GPIOA, GPIO_Pin_4);
+	  GPIOA->BSRR = GPIO_Pin_3 | GPIO_Pin_2;
+	  printf("done!\n\r");
+  }
+}
+
+
+
+
