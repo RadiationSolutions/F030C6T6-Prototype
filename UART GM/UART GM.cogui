@@ -15,6 +15,7 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
@@ -22,14 +23,12 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.coocox.welcome.ui.WelcomePage" name="" partName="welcome" title="welcome" tooltip="" workbook="DefaultEditorWorkbook">
-<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
-<org.coocox.welcome.ui.WelcomePage/>
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">&#x0A;<org.coocox.welcome.ui.WelcomePage/>
 </input>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.asm.AsmEditor" name="startup_stm32f0xx.s" partName="startup_stm32f0xx.s" path="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/cmsis_boot/startup/startup_stm32f0xx.s" title="startup_stm32f0xx.s" tooltip="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/cmsis_boot/startup/startup_stm32f0xx.s" workbook="DefaultEditorWorkbook">
@@ -40,41 +39,31 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/UART GM/stm32_lib/src/stm32f0xx_rcc.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="49907" selectionTopPixel="26840"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/main.c" title="main.c" tooltip="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/main.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/UART GM/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6314" selectionTopPixel="3001"/>
-</editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_spi.c" partName="stm32f0xx_spi.c" path="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/stm32_lib/src/stm32f0xx_spi.c" title="stm32f0xx_spi.c" tooltip="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/stm32_lib/src/stm32f0xx_spi.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/UART GM/stm32_lib/src/stm32f0xx_spi.c"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="47905" selectionTopPixel="25586"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.c" partName="stm32f0xx_gpio.c" path="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/stm32_lib/src/stm32f0xx_gpio.c" title="stm32f0xx_gpio.c" tooltip="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/stm32_lib/src/stm32f0xx_gpio.c" workbook="org.eclipse.ui.internal.EditorStack@300b2">
+<editor id="org.coocox.builder.ui.editors.ConfigEditor" name="" partName="Configuration" title="Configuration" tooltip="" workbook="DefaultEditorWorkbook">
+<input factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</input>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx.h" partName="stm32f0xx.h" path="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/cmsis_boot/stm32f0xx.h" title="stm32f0xx.h" tooltip="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/cmsis_boot/stm32f0xx.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/UART GM/cmsis_boot/stm32f0xx.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="47663" selectionTopPixel="11355"/>
+</editor>
+<editor focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.c" partName="stm32f0xx_gpio.c" path="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/stm32_lib/src/stm32f0xx_gpio.c" title="stm32f0xx_gpio.c" tooltip="C:/Users/rexina/repos/GM-project/F030C6T6-Prototype/UART GM/stm32_lib/src/stm32f0xx_gpio.c" workbook="org.eclipse.ui.internal.EditorStack@300b2">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/UART GM/stm32_lib/src/stm32f0xx_gpio.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13640" selectionTopPixel="7876"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="13640" selectionTopPixel="6469"/>
 </editor>
 </editors>
 <views>
-<view id="org.eclipse.debug.ui.MemoryView" partName="Memory">
-<viewState/>
-</view>
-<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
-<viewState/>
-</view>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
 <viewState>
 <ExpressionKeySet ExpKeys="so,(char*)instr,instr,pinInfo,pins,ssid,"/>
 </viewState>
 </view>
-<view id="org.coocox.component.ui.ComponentView" partName="Components">
+<view id="org.eclipse.debug.ui.MemoryView" partName="Memory">
 <viewState/>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
@@ -94,16 +83,31 @@
 </selection>
 </viewState>
 </view>
+<view id="org.coocox.component.ui.ComponentView" partName="Components">
+<viewState/>
+</view>
 <view id="org.coocox.builder.ui.exampleView" partName="SPI Examples">
 <viewState>
 <Examples ComponentId="434" Title="SPI"/>
 </viewState>
+</view>
+<view id="org.coocox.codebugger.trace.ui.traceview" partName="Semihosting">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
 <viewState/>
 </view>
 <view id="org.eclipse.cdt.dsf.debug.ui.disassembly.view" partName="Disassembly">
 <viewState disassembly.syncActiveContext="true" disassembly.trackExpression="false"/>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
 </view>
 </views>
 <perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.coocox.builder.perspective.CoBuilder">
@@ -171,7 +175,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@3a8376" ratio="0.1167002" ratioLeft="290" ratioRight="2195" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d25538">
-<folder appearance="2" expanded="0">
+<folder appearance="2" expanded="2">
 <page content="org.coocox.builder.ui.exampleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -241,8 +245,8 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <hide_toolbar_item_id id="org.coocox.builder.ui.build"/>
 <hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
-<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
 <hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
+<hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
@@ -325,28 +329,11 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.asm.AsmEditor" path="/UART GM/cmsis_boot/startup/startup_stm32f0xx.s"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/UART GM/stm32_lib/src/stm32f0xx_rcc.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/UART GM/stm32_lib/src/stm32f0xx_spi.c"/>
+<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</editor>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/UART GM/cmsis_boot/stm32f0xx.h"/>
 </editors>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3919" y="37"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3993" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="3919" y="37"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1686" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="4658" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="5846" y="1"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="6337" y="0"/>
-</item>
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="6338" y="0"/>
 </item>
@@ -464,8 +451,36 @@
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="6172" y="0"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
-<position info="not_deleted" x="6233" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4333" y="0"/>
+</item>
+<item historyLabel="Configuration" index="9"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4305" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6684" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6531" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6538" y="0"/>
+</item>
+<item historyLabel="stm32f0xx.h" index="10">
+<position info="not_deleted" x="47663" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6538" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6630" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="6820" y="0"/>
+</item>
+<item active="true" historyLabel="stm32f0xx.h" index="10">
+<position info="not_deleted" x="47663" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -474,11 +489,36 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_spi.c" tooltip="UART GM/stm32_lib/src/stm32f0xx_spi.c">
-<persistable path="/UART GM/stm32_lib/src/stm32f0xx_spi.c"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx.h" tooltip="UART GM/cmsis_boot/stm32f0xx.h">
 <persistable path="/UART GM/cmsis_boot/stm32f0xx.h"/>
+</file>
+<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
+<persistable>
+<org.coocox.builder.ui.editors.ConfigEditor horizontalPosition="0" subTagIndex="2" verticalPosition="0"/>
+</persistable>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hAndroidServer.h" tooltip="testProject/include/hFramework_include/hAndroidServer.h">
+<persistable path="/testProject/include/hFramework_include/hAndroidServer.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="testProject/main.cpp">
+<persistable path="/testProject/main.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hRegulator.h" tooltip="testProject/include/hFramework_include/hRegulator.h">
+<persistable path="/testProject/include/hFramework_include/hRegulator.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="testProject/main.c">
+<persistable path="/testProject/main.c"/>
+</file>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage horizontalPosition="0" selectedItemId="0" subPageIndex="2" verticalPosition="0"/>
+</persistable>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_spi.c" tooltip="UART GM/stm32_lib/src/stm32f0xx_spi.c">
+<persistable path="/UART GM/stm32_lib/src/stm32f0xx_spi.c"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_gpio.h" tooltip="UART GM/stm32_lib/inc/stm32f0xx_gpio.h">
 <persistable path="/UART GM/stm32_lib/inc/stm32f0xx_gpio.h"/>
@@ -492,30 +532,12 @@
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_rcc.c" tooltip="UART GM/stm32_lib/src/stm32f0xx_rcc.c">
 <persistable path="/UART GM/stm32_lib/src/stm32f0xx_rcc.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="printf.c" tooltip="UART GM/stdio/printf.c">
-<persistable path="/UART GM/stdio/printf.c"/>
-</file>
 <file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>
-<subPage/>
+<persistable>&#x0A;<subPage/>
 </persistable>
 </file>
-<file factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor" name="" tooltip="">
-<persistable>
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</persistable>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="syscalls.c" tooltip="UART GM/syscalls/syscalls.c">
-<persistable path="/UART GM/syscalls/syscalls.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_usart.c" tooltip="UART GM/stm32_lib/src/stm32f0xx_usart.c">
-<persistable path="/UART GM/stm32_lib/src/stm32f0xx_usart.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f0xx_conf.h" tooltip="UART GM/cmsis_boot/stm32f0xx_conf.h">
-<persistable path="/UART GM/cmsis_boot/stm32f0xx_conf.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f0xx_temp.c" tooltip="UART GM/cmsis_boot/system_stm32f0xx_temp.c">
-<persistable path="/UART GM/cmsis_boot/system_stm32f0xx_temp.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="hAndroidServer.h" tooltip="testProject/include/hFramework_include/hAndroidServer.h">
+<persistable path="/testProject/include/hFramework_include/hAndroidServer.h"/>
 </file>
 </mruList>
 </workbench>

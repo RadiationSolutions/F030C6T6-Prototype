@@ -1,31 +1,43 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
-   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F030C6T6 -DSTM32F030X6 -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\stm32_lib\inc -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\stm32_lib -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\cmsis_core -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\cmsis_boot">
-      <target file="syscalls.o" lastModified="14784413e2f">
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m0 -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F030C6T6 -DSTM32F030X6 -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\stm32_lib\inc -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\src -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\stm32_lib -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\cmsis_core -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM -I..\..\..\..\..\..\..\..\..\Users\rexina\repos\GM-project\F030C6T6-Prototype\UART GM\cmsis_boot">
+      <target file="syscalls.o" lastModified="14798693c02">
          <source file="..\..\..\syscalls\syscalls.c" lastModified="14749df90cc"/>
       </target>
-      <target file="stm32f0xx_spi.o" lastModified="14784413cbe">
+      <target file="stm32f0xx_spi.o" lastModified="14798693a90">
          <source file="..\..\..\stm32_lib\src\stm32f0xx_spi.c" lastModified="14749df90b9"/>
       </target>
-      <target file="stm32f0xx_gpio.o" lastModified="14784413daf">
+      <target file="font.o" lastModified="14798be70cf">
+         <source file="..\..\..\src\font.c" lastModified="14798bc6dea"/>
+      </target>
+      <target file="stm32f0xx_gpio.o" lastModified="14798693b87">
          <source file="..\..\..\stm32_lib\src\stm32f0xx_gpio.c" lastModified="14749df90a1"/>
       </target>
-      <target file="stm32f0xx_rcc.o" lastModified="14784413b49">
+      <target file="LED.o" lastModified="14798693d31">
+         <source file="..\..\..\src\LED.c" lastModified="1479842602b"/>
+      </target>
+      <target file="stm32f0xx_rcc.o" lastModified="147986937e2">
          <source file="..\..\..\stm32_lib\src\stm32f0xx_rcc.c" lastModified="14749df90b6"/>
       </target>
-      <target file="printf.o" lastModified="14784418972">
+      <target file="printf.o" lastModified="14798693979">
          <source file="..\..\..\stdio\printf.c" lastModified="14784417fcf"/>
       </target>
-      <target file="stm32f0xx_usart.o" lastModified="14784413ec7">
+      <target file="stm32f0xx_usart.o" lastModified="14798693cb2">
          <source file="..\..\..\stm32_lib\src\stm32f0xx_usart.c" lastModified="14749df90bd"/>
       </target>
-      <target file="main.o" lastModified="147849b3a8d">
-         <source file="..\..\..\main.c" lastModified="147849b3790"/>
+      <target file="sys.o" lastModified="1479869384d">
+         <source file="..\..\..\src\sys.c" lastModified="1479850faff"/>
       </target>
-      <target file="startup_stm32f0xx.o" lastModified="14784413be6">
+      <target file="main.o" lastModified="14798bf6891">
+         <source file="..\..\..\src\main.c" lastModified="14798bf5d64"/>
+      </target>
+      <target file="startup_stm32f0xx.o" lastModified="147986938e7">
          <source file="..\..\..\cmsis_boot\startup\startup_stm32f0xx.s" lastModified="14749df9036"/>
       </target>
-      <target file="system_stm32f0xx_temp.o" lastModified="14784413d3e">
+      <target file="LCD.o" lastModified="14798bead1d">
+         <source file="..\..\..\src\LCD.c" lastModified="14798bea506"/>
+      </target>
+      <target file="system_stm32f0xx_temp.o" lastModified="14798693b06">
          <source file="..\..\..\cmsis_boot\system_stm32f0xx_temp.c" lastModified="147841d4deb"/>
       </target>
    </processor>

@@ -1,16 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="4.7.4 -mcpu=cortex-m0 -mthumb -g -nostartfiles -Map=UART GM.map -O0 --gc-sections -LC:\MyFiles\Science\Electronics\MicroControllers\CooCox\CoIDE\configuration\ProgramData\UART GM -TC:\MyFiles\Science\Electronics\MicroControllers\CooCox\CoIDE\configuration\ProgramData\UART GM/arm-gcc-link.ld -g">
-      <target file="UART GM.elf" lastModified="147849b3cdc">
-         <source file="..\obj\stm32f0xx_rcc.o" lastModified="14784413b49"/>
-         <source file="..\obj\main.o" lastModified="147849b3a8d"/>
-         <source file="..\obj\startup_stm32f0xx.o" lastModified="14784413be6"/>
-         <source file="..\obj\printf.o" lastModified="14784418972"/>
-         <source file="..\obj\stm32f0xx_spi.o" lastModified="14784413cbe"/>
-         <source file="..\obj\system_stm32f0xx_temp.o" lastModified="14784413d3e"/>
-         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14784413daf"/>
-         <source file="..\obj\syscalls.o" lastModified="14784413e2f"/>
-         <source file="..\obj\stm32f0xx_usart.o" lastModified="14784413ec7"/>
+      <target file="UART GM.elf" lastModified="14798bf6adb">
+         <source file="..\obj\stm32f0xx_rcc.o" lastModified="147986937e2"/>
+         <source file="..\obj\sys.o" lastModified="1479869384d"/>
+         <source file="..\obj\main.o" lastModified="14798bf6891"/>
+         <source file="..\obj\startup_stm32f0xx.o" lastModified="147986938e7"/>
+         <source file="..\obj\font.o" lastModified="14798be70cf"/>
+         <source file="..\obj\printf.o" lastModified="14798693979"/>
+         <source file="..\obj\LCD.o" lastModified="14798bead1d"/>
+         <source file="..\obj\stm32f0xx_spi.o" lastModified="14798693a90"/>
+         <source file="..\obj\system_stm32f0xx_temp.o" lastModified="14798693b06"/>
+         <source file="..\obj\stm32f0xx_gpio.o" lastModified="14798693b87"/>
+         <source file="..\obj\syscalls.o" lastModified="14798693c02"/>
+         <source file="..\obj\stm32f0xx_usart.o" lastModified="14798693cb2"/>
+         <source file="..\obj\LED.o" lastModified="14798693d31"/>
       </target>
    </processor>
 </history>
